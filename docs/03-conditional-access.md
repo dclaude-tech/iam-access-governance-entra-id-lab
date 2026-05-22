@@ -44,6 +44,12 @@ An emergency access account was created before enforcement testing so the tenant
 
 After validating the pilot group scope and MFA grant control, security defaults were disabled and the policy was moved from report-only mode to On.
 
+## Testing
+
+After the policy was enabled, Ava Patel was used as a pilot user to test the MFA sign-in experience.
+
+Ava was a member of the SG-CA-MFA-Pilot group, which placed her in scope for the Conditional Access policy. After completing the MFA setup and sign-in process, the Microsoft Entra sign-in logs showed successful sign-in activity for the pilot user.
+
 ## IAM concepts demonstrated
 
 - Conditional Access policy creation
@@ -65,3 +71,4 @@ Included evidence:
 - Conditional Access policy scoped to the MFA pilot group
 - MFA grant control configured in report-only mode
 - MFA Conditional Access policy enabled for pilot users
+- Successful pilot user sign-in activity after MFA testing
