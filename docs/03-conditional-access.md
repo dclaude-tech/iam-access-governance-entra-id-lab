@@ -16,6 +16,7 @@ The policy was created in report-only mode first to safely validate the configur
 | Target resources | All resources |
 | Grant control | Require multifactor authentication |
 | Initial policy state | Report-only |
+| Final policy state | On |
 
 ## Pilot group
 
@@ -35,9 +36,13 @@ The pilot group included the following lab users:
 
 ## Safety controls
 
-The policy was configured using a controlled pilot group instead of applying directly to all users.
+The policy was first configured in report-only mode to validate the setup before enforcement.
 
-An emergency access account was also created before enforcement testing so the tenant would have a fallback administrator account if a Conditional Access policy caused sign-in issues.
+The policy was scoped to a controlled pilot group instead of being applied directly to all users. This reduced the risk of accidentally affecting administrator access or locking out the tenant.
+
+An emergency access account was created before enforcement testing so the tenant would have a fallback administrator account if a Conditional Access policy caused sign-in issues.
+
+After validating the pilot group scope and MFA grant control, security defaults were disabled and the policy was moved from report-only mode to On.
 
 ## IAM concepts demonstrated
 
@@ -59,3 +64,4 @@ Included evidence:
 
 - Conditional Access policy scoped to the MFA pilot group
 - MFA grant control configured in report-only mode
+- MFA Conditional Access policy enabled for pilot users
