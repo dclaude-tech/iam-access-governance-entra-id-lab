@@ -66,6 +66,31 @@ Ava’s access was updated to remove HR-specific access and add Finance-specific
 
 This demonstrates a least-privilege mover process where access is updated when a user changes departments. The user keeps baseline access, loses access that no longer matches the role, and receives access required for the new role.
 
+## Leaver workflow
+
+Ava Patel was also used as the leaver example for this lab.
+
+The leaver workflow simulated a user leaving the organization. The account was disabled first, then group-based access was removed.
+
+| Control | Result |
+|---|---|
+| User | Ava Patel |
+| Account status | Disabled |
+| Group memberships | Removed |
+| Access result | User no longer retains baseline, Finance, or MFA pilot group access |
+
+## Leaver access removal
+
+Ava was removed from the following groups:
+
+| Removed group | Purpose |
+|---|---|
+| SG-All-Employees | Removed baseline employee access |
+| SG-Finance-Analysts | Removed Finance role-specific access |
+| SG-CA-MFA-Pilot | Removed Conditional Access MFA pilot group membership |
+
+This demonstrates a leaver process where the account is disabled and group-based access is removed to reduce unnecessary access after separation.
+
 ## IAM concepts demonstrated
 
 - Identity lifecycle management
