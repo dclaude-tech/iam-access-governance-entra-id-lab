@@ -22,6 +22,30 @@ The access review simulation focuses on identifying whether users still require 
 | SG-IT-Support | Review IT support role-specific access |
 | SG-CA-MFA-Pilot | Review pilot group membership for MFA Conditional Access testing |
 
+## Review findings
+
+Two access review checks were completed in this simulation.
+
+### Finance group review
+
+The SG-Finance-Analysts group was reviewed after the joiner, mover, and leaver workflows.
+
+| Reviewed group | Expected result | Review result |
+|---|---|---|
+| SG-Finance-Analysts | Only current Finance users should remain members | Marcus Chen remained as the only member |
+
+Ava Patel was not present in the Finance group after the leaver workflow, which supports least-privilege access cleanup.
+
+### Leaver access review
+
+Ava Patel’s group memberships were reviewed after the leaver workflow.
+
+| Reviewed user | Expected result | Review result |
+|---|---|---|
+| Ava Patel | No remaining group-based access | Not a member of any groups |
+
+This confirmed that Ava no longer retained baseline, Finance, or Conditional Access pilot group membership after account disablement and access removal.
+
 ## IAM concepts demonstrated
 
 - Access review planning
@@ -37,3 +61,8 @@ The access review simulation focuses on identifying whether users still require 
 Screenshots for this section are stored in:
 
 `screenshots/06-access-review-simulation/`
+
+Included evidence:
+
+- Finance group membership reviewed after lifecycle changes
+- Leaver access removal reviewed for Ava Patel
