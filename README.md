@@ -6,7 +6,13 @@ This project is a hands-on IAM access governance lab built in Microsoft Entra ID
 
 Okta and SailPoint are included only as conceptual comparisons. This project does not configure live integrations with Okta or SailPoint.
 
-## Lab Environment
+## Project status
+
+Phase 1 is complete.
+
+This lab includes Microsoft Entra tenant setup, test users, role-based security groups, MFA and Conditional Access, joiner/mover/leaver workflows, Privileged Identity Management, and access review simulation.
+
+## Lab environment
 
 The lab was built in a Microsoft Entra ID tenant named **Northstar Identity Lab**.
 
