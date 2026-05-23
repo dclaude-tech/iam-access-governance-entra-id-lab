@@ -14,9 +14,11 @@ This project is a hands-on IAM access governance lab built in Microsoft Entra ID
 
 Okta and SailPoint are included only as conceptual comparisons. This project does not configure live integrations with Okta or SailPoint.
 
-## Fictional Company
+## Lab Environment
 
-Northstar Financial Services Lab is a fictional financial services organization used to model identity and access governance scenarios across HR, Finance, IT, Security, Sales, and Contractors.
+Northstar Identity Lab is the Microsoft Entra ID lab tenant used for this project.
+
+The lab uses fictional users, departments, and security groups to model identity and access governance scenarios across HR, Finance, IT, Conditional Access, privileged access, and access review workflows.
 
 ## Phase 1 Scope
 
@@ -27,8 +29,8 @@ Northstar Financial Services Lab is a fictional financial services organization 
 - MFA and Conditional Access
 - Joiner, mover, and leaver workflows
 - Least-privilege admin role assignment
-- Privileged Identity Management where available
-- Manual access request and access review simulations where licensing limits apply
+- Privileged Identity Management
+- Manual access review simulation
 
 ## Phase 2 Scope
 
