@@ -40,6 +40,32 @@ Ava was assigned baseline employee access and HR-specific access through Microso
 
 This demonstrates a group-based joiner process where access is assigned through security groups instead of direct, one-off user permissions.
 
+## Mover workflow
+
+Ava Patel was also used as the mover example for this lab.
+
+The mover workflow simulated Ava moving from Human Resources to Finance. Her user profile attributes were updated first, then her group access was changed to match her new role.
+
+| Attribute | Before | After |
+|---|---|---|
+| User | Ava Patel | Ava Patel |
+| Job title | HR Analyst | Finance Analyst |
+| Department | Human Resources | Finance |
+| Account status | Enabled | Enabled |
+
+## Mover access update
+
+Ava’s access was updated to remove HR-specific access and add Finance-specific access.
+
+| Access change | Group |
+|---|---|
+| Retained baseline access | SG-All-Employees |
+| Removed prior role access | SG-HR-Analysts |
+| Added new role access | SG-Finance-Analysts |
+| Retained MFA pilot access | SG-CA-MFA-Pilot |
+
+This demonstrates a least-privilege mover process where access is updated when a user changes departments. The user keeps baseline access, loses access that no longer matches the role, and receives access required for the new role.
+
 ## IAM concepts demonstrated
 
 - Identity lifecycle management
