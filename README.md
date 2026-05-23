@@ -8,9 +8,11 @@ Okta and SailPoint are included only as conceptual comparisons. This project doe
 
 ## Project status
 
-Phase 1 is complete.
+Core lab complete.
 
 This lab includes Microsoft Entra tenant setup, test users, role-based security groups, MFA and Conditional Access, joiner/mover/leaver workflows, Privileged Identity Management, and access review simulation.
+
+A future phase may add Microsoft Entra ID Governance features such as access packages, Lifecycle Workflows, automated access requests, approvals, and advanced access reviews.
 
 ## Lab environment
 
