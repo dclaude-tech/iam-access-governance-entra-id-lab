@@ -81,3 +81,9 @@ Evidence includes:
 ## Important note
 
 This lab is built hands-on in Microsoft Entra ID only. Okta and SailPoint are discussed only for conceptual IAM mapping and are not integrated into the lab environment.
+
+## Disclaimer
+
+This is a fictional lab environment created for portfolio and learning purposes. It uses fictional users, departments, groups, and business scenarios.
+
+This project does not include confidential, employer, customer, internal, or production information.
